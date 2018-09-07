@@ -86,7 +86,6 @@ const userControl = {
                         localStorage.username = obj.firstName;
                         localStorage.mobReg = obj.mobReg;
                         liveLocation(obj);
-                        break;
                     }
                 }
                 else {

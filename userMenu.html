@@ -23,14 +23,24 @@
     <button id="showMap">Show my Location</button>
     <button id="friend">Send friend requests</button>
     <div id="friendMessage">
-        <h2>Type message to send</h2>
-        <input type="text" placeholder="receiver phone number" required id="receiverPhone">
-        <input type="text" placeholder="enter your message" required id="friendRequestMessage">
-        <input type="submit" id="sendFriendRequest">
+        <form>
+            <h2>Type message to send</h2>
+            <input type="text" placeholder="receiver phone number" required id="receiverPhone" required>
+            <input type="text" placeholder="enter your message" required id="friendRequestMessage" required>
+            <input type="button" id="sendFriendRequest">
+        </form>
     </div>
     <input type="button" value="View friend requests" id="pendingRequests">
+    <span id="noRequest"></span>
     <input type="button" value="sign out" id="signOut">
     <div id="friendRequests"></div>
+    <div id="friendLocation">
+        <form>
+            <input type="tel" maxlength="10" placeholder="search friend location" id="friendNumber" required>
+            <input type="button" id="searchFriend" value="submit">
+        </form>    
+        <span id="notFriend"></span>
+    </div>
     <div id="map" style="width: 800px; height: 500px"></div>
 </body>
 </html>

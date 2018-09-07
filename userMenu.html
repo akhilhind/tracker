@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="http://cdn.mapfit.com/v2-4/assets/css/mapfit.css">
+    <script src="http://cdn.mapfit.com/v2-4/assets/js/mapfit.js and https://cdn.mapfit.com/v2-4/assets/js/tetragon.js"></script>
+    <script src="https://cdn.mapfit.com/v2-4/assets/js/tetragon.js"></script>
+    <script src="https://cdn.mapfit.com/v2-4/assets/js/mapfit.js"></script>
     <script src="mapConfig.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
     <script src="newUserFirebase.js"></script>
@@ -41,6 +45,21 @@
         </form>    
         <span id="notFriend"></span>
     </div>
-    <div id="map" style="width: 800px; height: 500px"></div>
+    <div id="mapfit" style="width: 800px; height: 500px">
+        <script>
+            // create map
+            let map = mapfit.MapView('mapfit', {theme: 'day'});
+              
+            //set zoom
+            map.setZoom(13); 
+            position = mapfit.LatLng([40.745934, -73.988280]);
+            myMarker = mapfit.Marker(position);
+            //set the map center on marker position
+            map.setCenter(position);
+
+            //add marker to map
+            map.addMarker(myMarker);
+        </script>
+    </div>
 </body>
 </html>

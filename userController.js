@@ -32,6 +32,7 @@ function searchFriendLocation() {
             for(let key in ar) {
                 if(key == window.localStorage.mobReg) {
                     console.log("Current Latitude:"+object.currentLatitude+" Current Longitude:"+object.currentLongitude);
+                    init(object.currentLatitude,object.currentLongitude);
                 }
                 else {
                     var sp = document.querySelector("#notFriend");
@@ -106,7 +107,7 @@ function addFriend() {
 }
 
 function showMap() {
-    var map = document.querySelector("#map");
+    var map = document.querySelector("#mapfit");
     map.style.display = "block";
 }
 

@@ -84,7 +84,7 @@ const userControl = {
                     if(userCredentials.loginPass == obj.passReg) {
                         console.log("Login Successful! as user");
                         localStorage.username = obj.firstName;
-                        liveLocation(userCredentials.loginMob);
+                        liveLocation(obj);
                         break;
                     }
                 }

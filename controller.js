@@ -357,13 +357,37 @@ function showPosition(position) {
     latReg =  position.coords.latitude;
 }
 
-function liveLocation(mobRef) {
-    var userRef = firebase.database().ref('registeredUsers/'+mobRef+'/');
+function liveLocation(objRef) {
+    var userRef = firebase.database().ref('registeredUsers/'+objRef.mobRef+'/');
     userRef.on('value',(snapshot) => {
         console.log("snapshot is",snapshot);
         var object = snapshot.val();
-        console.log("Object is ",object);
-        // object.
+        console.log("Object is ",object);  
     })
-    console.log(userRef);
-}
+    firebase.database().ref('registeredUsers/'+objRef.mobReg+'/').set({
+        currentLatitude : 500,
+        currentLongitude : 800,
+        emailReg : objRef.emailReg,
+        firstName : objRef.firstName,
+        lastName : objRef.lastName,
+        mobReg :  objRef.mobReg,
+        passReg : objRef.passReg        
+    }, function(error) {
+        if (error) {
+          // The write failed...
+        } else {
+          // Data saved successfully!
+        }
+      });
+ }
+    
+
+    
+    // Write the new post's data simultaneously in the posts list and the user's post list.
+    // var updates = {};
+    // updates['/posts/' + newPostKey] = postData;
+    // updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+    // var newlong = 100;
+    // var newlat = latReg;
+
+    // console.log(userRef);

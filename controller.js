@@ -298,32 +298,72 @@
 
 document.addEventListener("DOMContentLoaded",begin);
 
-
 function begin() {
     document.querySelector("#submit").addEventListener("click",fetchUserData);
+    document.querySelector("#showDiv").addEventListener("click",showDiv);
+    document.querySelector("#loginButton").addEventListener("click",loginRegisteredUser);
     getLocation();
+    
+}
+
+function loginRegisteredUser() {
+    var loginMob = document.querySelector("#loginMob").value;
+    var loginPass = document.querySelector("#loginPass").value;
+    var userCredentials = new loginUser(loginMob, loginPass);
+    userControl.checkUser(userCredentials);
+}
+
+function showDiv() {
+    var logBox = document.querySelector("#login");
+    if(logBox.style.display == "block") {
+        logBox.style.display = "none";
+    }
+    else {
+        logBox.style.display = "block";
+    }
 }
 
 function fetchUserData() {
-    var name = document.querySelector("#name").value;
-    console.log(name);
-    var long = position.coords.longitude;
-    var lat = position.coords.latitude;
-    var newUserData = new newUser(name,long,lat);
-    console.log(long,lat);
+    // var name = document.querySelector('#name').value;
+    // console.log(name);
+    var fNameReg = document.querySelector("#fnameReg").value;
+    var lNameReg = document.querySelector("#lnameReg").value;
+    var emailReg = document.querySelector("#emailReg").value;
+    var passReg = document.querySelector("#passReg").value;
+    var mobReg = document.querySelector("#phoneReg").value;
+    console.log(fNameReg,lNameReg,emailReg,passReg,mobReg);
+    console.log(longReg,latReg);
+    // var long = positaion.coords.longitude
+    // var lat = position.coords.latitude;
+
+    var newUserData = new newUser(fNameReg,lNameReg,emailReg,passReg,mobReg,latReg,longReg);
+    // console.log(long,lat);
     control.addDetails(newUserData);
-    displayNotification();
 }
 
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
+        x.innerHTML = "Geolocation not supported.";
     }
 }
+
 function showPosition(position) {
     var x = document.getElementById("demo");
     x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude; 
+    "<br>Longitude: " + position.coords.longitude;
+    longReg =  position.coords.longitude;
+    latReg =  position.coords.latitude;
+}
+
+function liveLocation(mobRef) {
+    var userRef = firebase.database().ref('registeredUsers/'+mobRef+'/');
+    userRef.on('value',(snapshot) => {
+        console.log("snapshot is",snapshot);
+        var object = snapshot.val();
+        console.log("Object is ",object);
+        // object.
+    })
+    console.log(userRef);
 }

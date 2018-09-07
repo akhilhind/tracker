@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Quick start. Showing an interactive map on a page</title>
+    <title>HackSlash | LiveLocater</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
     <script src="mapConfig.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
-    <script src="adminFirebase.js"></script>
+    <script src="newUserFirebase.js"></script>
+    <script src="loginUserFirebase.js"></script>
     <script src="objSet.js"></script>
     <script src="main.js"></script>
     <script src="worker.js"></script>
     <script src="utilities.js"></script>
     <script src="controller.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="map" style="width: 600px; height: 400px"></div>
-    <input type="text" id="name" placeholder="enter your name">
+
+    <br>
+    <br>
+    <input type="text" id="fnameReg" placeholder="enter first name">
+    <input type="text" id="lnameReg" placeholder="enter last name">
+    <input type="email" id="emailReg" placeholder="enter your email">
+    <input type="password" id="passReg" placeholder="****************">
+    <input type="tel" id="phoneReg" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
+    
     <input type="submit" id="submit">
     <p id="demo"></p>
+
+    <input type="submit" value="login" id="showDiv">
+    <div id="login">
+        <input type="tel" maxlength="10" placeholder="logMobile" id="loginMob">
+        <input type="password" placeholder="**********" id="loginPass">
+        <input type="submit" id="loginButton">
+    </div>
 </body>
 
 </html>

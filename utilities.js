@@ -1,10 +1,10 @@
-  var config = {
-    apiKey: "AIzaSyBdvqqvkmlXQWW68Rf6QfBqSnEmRWUZcXA",
-    authDomain: "messaging-38981.firebaseapp.com",
-    databaseURL: "https://messaging-38981.firebaseio.com",
-    projectId: "messaging-38981",
-    storageBucket: "messaging-38981.appspot.com",
-    messagingSenderId: "750780048975"
+var config = {
+    apiKey: "AIzaSyD32GEkaxnT8lYXvFpVIp_6YuxEJJ06vTw",
+    authDomain: "livetracker-85b71.firebaseapp.com",
+    databaseURL: "https://livetracker-85b71.firebaseio.com",
+    projectId: "livetracker-85b71",
+    storageBucket: "",
+    messagingSenderId: "617258325447"
   };
   firebase.initializeApp(config);
 

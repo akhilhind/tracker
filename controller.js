@@ -331,11 +331,10 @@ function fetchUserData() {
     var emailReg = document.querySelector("#emailReg").value;
     var passReg = document.querySelector("#passReg").value;
     var mobReg = document.querySelector("#phoneReg").value;
-    console.log(fNameReg,lNameReg,emailReg,passReg,mobReg);
+    console.log(fNameReg,lNameReg,emailReg,passReg,mobReg,);
     console.log(longReg,latReg);
     // var long = positaion.coords.longitude
     // var lat = position.coords.latitude;
-
     var newUserData = new newUser(fNameReg,lNameReg,emailReg,passReg,mobReg,latReg,longReg);
     // console.log(long,lat);
     control.addDetails(newUserData);
@@ -358,36 +357,28 @@ function showPosition(position) {
 }
 
 function liveLocation(objRef) {
-    var userRef = firebase.database().ref('registeredUsers/'+objRef.mobRef+'/');
-    userRef.on('value',(snapshot) => {
-        console.log("snapshot is",snapshot);
-        var object = snapshot.val();
-        console.log("Object is ",object);  
-    })
-    firebase.database().ref('registeredUsers/'+objRef.mobReg+'/').set({
-        currentLatitude : 500,
-        currentLongitude : 800,
-        emailReg : objRef.emailReg,
-        firstName : objRef.firstName,
-        lastName : objRef.lastName,
-        mobReg :  objRef.mobReg,
-        passReg : objRef.passReg        
-    }, function(error) {
-        if (error) {
-          // The write failed...
-        } else {
-          // Data saved successfully!
-        }
-      });
+    // var userRef = firebase.database().ref('registeredUsers/'+objRef.mobRef+'/');
+    // userRef.on('value',(snapshot) => {
+    //     console.log("snapshot is",snapshot);
+    //     var object = snapshot.val();
+    //     console.log("Object is ",object);  
+    // })
+    firebase.database().ref('registeredUsers/'+objRef.mobReg+'/currentLongitude').set("500");
+    firebase.database().ref('registeredUsers/'+objRef.mobReg+'/currentLatitude').set("500");
+    setTimeout(1000,liveLocation);
+    console.log("called again");
+        // currentLatitude : 5000,
+        // currentLongitude : 8000,
+        // emailReg : objRef.emailReg,
+        // firstName : objRef.firstName,
+        // lastName : objRef.lastName,
+        // mobReg :  objRef.mobReg,
+        // passReg : objRef.passReg        
+    // }, function(error) {
+    //     if (error) {
+    //       // The write failed...
+    //       // Data saved successfully!
+    //     }
+    //   });
+                //     } else {
  }
-    
-
-    
-    // Write the new post's data simultaneously in the posts list and the user's post list.
-    // var updates = {};
-    // updates['/posts/' + newPostKey] = postData;
-    // updates['/user-posts/' + uid + '/' + newPostKey] = postData;
-    // var newlong = 100;
-    // var newlat = latReg;
-
-    // console.log(userRef);

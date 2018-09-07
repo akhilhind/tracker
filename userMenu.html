@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+    <script src="mapConfig.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script src="newUserFirebase.js"></script>
+    <script src="loginUserFirebase.js"></script>
+    <script src="objSet.js"></script>
+    <script src="main.js"></script>
+    <script src="worker.js"></script>
+    <script src="utilities.js"></script>
+    <script src="userController.js"></script>
+    <!-- <script src="controller.js"></script> -->
+    <link rel="stylesheet" href="userExperience.css">
+</head>
+<body>
+    <h1 id="head">Welcome <span id="username"></span></h1>
+    <button id="showMap">Show my Location</button>
+    <button id="friend">Send friend requests</button>
+    <div id="friendMessage">
+        <h2>Type message to send</h2>
+        <input type="text" placeholder="receiver phone number" required id="receiverPhone">
+        <input type="text" placeholder="enter your message" required id="friendRequestMessage">
+        <input type="submit" id="sendFriendRequest">
+    </div>
+    <input type="button" value="View friend requests" id="pendingRequests">
+    <input type="button" value="sign out" id="signOut">
+    <div id="friendRequests"></div>
+    <div id="map" style="width: 800px; height: 500px"></div>
+</body>
+</html>

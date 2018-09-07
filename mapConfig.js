@@ -1,15 +1,12 @@
 ymaps.ready(init);
-        var myMap, 
-            myPlacemark;
+var myMap, myPlacemark;
 
-        function init(){ 
-            myMap = new ymaps.Map("map", {
-                center: [28.591372500000002, 77.0958637],
-                zoom: 7
-        });
+function init(){ 
+    myMap = new ymaps.Map("map", {
+        center: [28.591372500000002, 77.0958637], zoom: 17
+    });
 
-        myPlacemark = new ymaps.Placemark([28.591372500000002, 77.0958637], { hintContent: 'Delhi!', balloonContent: 'Capital of India'
-            });
+    myPlacemark = new ymaps.Placemark([28.591372500000002, 77.0958637], { hintContent: 'Delhi!', balloonContent: 'Capital of India'});
             
-            myMap.geoObjects.add(myPlacemark);
-        }
+    myMap.geoObjects.add(myPlacemark);
+}

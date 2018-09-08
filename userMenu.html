@@ -1,65 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script> -->
-    <link rel="stylesheet" href="http://cdn.mapfit.com/v2-4/assets/css/mapfit.css">
-    <script src="http://cdn.mapfit.com/v2-4/assets/js/mapfit.js and https://cdn.mapfit.com/v2-4/assets/js/tetragon.js"></script>
-    <script src="https://cdn.mapfit.com/v2-4/assets/js/tetragon.js"></script>
-    <script src="https://cdn.mapfit.com/v2-4/assets/js/mapfit.js"></script>
-    <script src="mapConfig.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
-    <script src="newUserFirebase.js"></script>
-    <script src="loginUserFirebase.js"></script>
-    <script src="objSet.js"></script>
-    <script src="main.js"></script>
-    <script src="worker.js"></script>
-    <script src="utilities.js"></script>
-    <script src="userController.js"></script>
-    <!-- <script src="controller.js"></script> -->
-    <link rel="stylesheet" href="userExperience.css">
-</head>
-<body>
-    <h1 id="head">Welcome <span id="username"></span></h1>
-    <button id="showMap">Show my Location</button>
-    <button id="friend">Send friend requests</button>
-    <div id="friendMessage">
-        <form>
-            <h2>Type message to send</h2>
-            <input type="text" placeholder="receiver phone number" required id="receiverPhone" required>
-            <input type="text" placeholder="enter your message" required id="friendRequestMessage" required>
-            <input type="button" id="sendFriendRequest">
-        </form>
-    </div>
-    <input type="button" value="View friend requests" id="pendingRequests">
-    <span id="noRequest"></span>
-    <input type="button" value="sign out" id="signOut">
-    <div id="friendRequests"></div>
-    <div id="friendLocation">
-        <form>
-            <input type="tel" maxlength="10" placeholder="search friend location" id="friendNumber" required>
-            <input type="button" id="searchFriend" value="submit">
-        </form>    
-        <span id="notFriend"></span>
-    </div>
-    <div id="mapfit" style="width: 800px; height: 500px">
-        <script>
-            // create map
-            let map = mapfit.MapView('mapfit', {theme: 'day'});
-              
-            //set zoom
-            map.setZoom(13); 
-            position = mapfit.LatLng([40.745934, -73.988280]);
-            myMarker = mapfit.Marker(position);
-            //set the map center on marker position
-            map.setCenter(position);
+<html>
 
-            //add marker to map
-            map.addMarker(myMarker);
-        </script>
-    </div>
-</body>
+   <head>
+      <title>HTML Frames</title>
+      <link href="http://cdn.mapfit.com/v2-4/assets/css/mapfit.css" rel='stylesheet'/>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script src="assets/scripts/newUserFirebase.js"></script>
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/kebn1jgs424ww94bu52h4nh21iva5gf2/map_load?v=01."></script>
+    <script src="assets/scripts/loginUserFirebase.js"></script>
+    <script src="assets/scripts/objSet.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/worker.js"></script>
+    <script src="assets/scripts/utilities.js"></script>
+    <script src="assets/scripts/controller.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontawesome-all.min.css">
+   </head>
+   
+	
+   <frameset  rows = "9%,80%,12%" > 
+      <frame name = "top" src = "top.html" scrolling="no" frameborder="0" framespacing="none" noresize="noresize" />
+      <frame name = "map" src = "userMenu2.html"  noresize="noresize" />
+      <frame name = "bottom" src = "bottom.html" scrolling="no" noresize="noresize"  />
+  
+      
+   
+</frameset>
+   
 </html>

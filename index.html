@@ -1,40 +1,128 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HackSlash | LiveLocater</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
-    <script src="mapConfig.js"></script>
+    <link href="http://cdn.mapfit.com/v2-4/assets/css/mapfit.css" rel='stylesheet'/>
     <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
-    <script src="newUserFirebase.js"></script>
-    <script src="loginUserFirebase.js"></script>
-    <script src="objSet.js"></script>
-    <script src="main.js"></script>
-    <script src="worker.js"></script>
-    <script src="utilities.js"></script>
-    <script src="controller.js"></script>
+    <script src="assets/scripts/newUserFirebase.js"></script>
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/kebn1jgs424ww94bu52h4nh21iva5gf2/map_load?v=01."></script>
+    <script src="assets/scripts/loginUserFirebase.js"></script>
+    <script src="assets/scripts/objSet.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/worker.js"></script>
+    <script src="assets/scripts/utilities.js"></script>
+    <script src="assets/scripts/controller.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontawesome-all.min.css">
 </head>
 
 <body>
-    <div id="map" style="width: 900px; height: 500px"></div>
+    <div id="container">
+        <div class="top">&nbsp;</div>
+        <div id="header"></div>
 
-    <br>
-    <br>
-    <input type="text" id="fnameReg" placeholder="enter first name">
-    <input type="text" id="lnameReg" placeholder="enter last name">
-    <input type="email" id="emailReg" placeholder="enter your email">
-    <input type="password" id="passReg" placeholder="****************">
-    <input type="tel" id="phoneReg" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
-    
-    <input type="submit" id="submit">
-    <p id="demo"></p>
-
-    <input type="submit" value="login" id="showDiv">
-    <div id="login">
-        <input type="tel" maxlength="10" placeholder="logMobile" id="loginMob">
-        <input type="password" placeholder="**********" id="loginPass">
-        <input type="submit" id="loginButton">
+        <div id="content">
+            <div class="login">
+                <div class="loginhead">
+                    <div class="sign" id="signUp">
+                        <a href="#">
+                            <h2 id="signUpHead">Sign Up</h2>
+                        </a>
+                    </div>
+                    <div class="sign" id="login">
+                        <a href="#">
+                            <h2 id="logInHead">Log In</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="logu">
+                    <div id="signUpBox">
+                        <form>
+                            <input type="text" id="fnameReg" placeholder="enter first name" required class="input">
+                            <input type="text" id="lnameReg" placeholder="enter last name"required class="input">  
+                            <input type="email" id="emailReg" placeholder="enter your email" required class="input">
+                            <input type="password" id="passReg" placeholder="****************" required minlength="4" class="input">
+                            <input type="tel" id="phoneReg" name="phone" placeholder="123-456-7890" maxlength="10" required minlength="10" class="input">
+                            <div class="buttonOuter">
+                                <input type="button" id="signUpSubmit" class="button but" value="Sign Up">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="loginBox">
+                        <span id="loginError"></span>
+                        <input type="tel" maxlength="10" placeholder="Registered Mobile Number" id="loginMob" class="input">
+                        <input type="password" placeholder="**********" id="loginPass" class="input">
+                        <div class="buttonOuter">
+                            <input type="button" id="logInSubmit" class="button but" value="log In">
+                        </div>
+                    </div>
+                    <!-- <div class="loginfo">
+                        <div class="input">
+                            <i class="fas fa-user icon"></i>
+                            <input type="text" name="name" placeholder="Username or email">
+                        </div>
+                        <div class="input">
+                            <i class="fas fa-lock icon"></i>
+                            <input type="password" name="pswd" placeholder="Password">
+                        </div>
+                        <div class="neeche">
+                            <input type="checkbox" class="left" id="remember">
+                            <span>
+                                <label for="remember">Remember me</label>
+                            </span>
+                            <span>
+                                <a href="#" class="right hov">Forgot your password?</a>
+                            </span>
+                        </div>
+                        <div class="but">
+                            <div class="button">
+                                <a href="#">
+                                    <p>Log In</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <p class="socialine">Or connect with:</p>
+                            <div class="sobutton">
+                                <div class="sobtn btn1">
+                                    <a href="https://www.twitter.com/yeyeluckysingh" class="solink">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <span>Facebook</span>
+                                    </a>
+                                </div>
+                                <div class="sobtn btn2">
+                                    <a href="#" class="solink">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        <span>Google+</span>
+                                    </a>
+                                </div>
+                                <div class="sobtn btn3">
+                                    <a href="#" class="solink">
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                </div>
+                                <div class="sobtn btn4">
+                                    <a href="#" class="solink">
+                                        <i class="fab fa-github-alt"></i>
+                                        <span>Github</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="few hov">By signing up, you agree to our
+                                <a href="#">Terms of Service</a> and
+                                <a href="#">Privacy Policy</a>.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FILE UPLOAD</title>
+	<style>
+	th,td{
+		padding:12px;
+
+          }
+    .button{
+	    	height: 40px;
+	    	width: 100px;
+	    	font-size: 20px;
+	    	font-weight: bold;
+	    	background-color: #7DCEA0;
+	    	border: none;
+	    	border-radius: 10px;
+	    	border-width: 5px;
+	    	outline: none;
+	    	border: 1px;
+	    	border-color: black;
+
+	    }
+	    .button:hover{
+	    	cursor: pointer;
+	    	background: #2FCABC;
+	    }
+</style>
+</head>
+<body bgcolor="#99A3A4">
+   <center><h1>Upload Your photo</h1></center>
+   <form action="userfile.php" method="post" enctype="multipart/form-data">
+    <table align="center" border="0";>
+    <tr>
+    	<th colspan="2" align="center">upload your pic</th>
+    </tr>
+    <tr>
+     <th>Upload Photo</th>
+    	<td > <input type="file" name="userfile" value="upload"></td>
+    </tr>
+    <td colspan="2" align="center"><input type="submit" class="button"></td>
+</table>
+</form>
+</body>
+</html>

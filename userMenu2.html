@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://cdn.mapfit.com/v2-4/assets/css/mapfit.css" rel='stylesheet'/>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script src="assets/scripts/newUserFirebase.js"></script>
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/kebn1jgs424ww94bu52h4nh21iva5gf2/map_load?v=01."></script>
+    <script src="assets/scripts/loginUserFirebase.js"></script>
+    <script src="assets/scripts/objSet.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/worker.js"></script>
+    <script src="assets/scripts/utilities.js"></script>
+    <script src="assets/scripts/userController.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main1.css">
+    <link rel="stylesheet" href="fontawesome-all.min.css">
+
+    <style> html, body, #map {margin: 0;padding: 0;width: 100%;height: 100%;} </style>
+    <!-- <script src="controller.js"></script> -->
+    
+    <link rel="stylesheet" href="userExperience.css">
+</head>
+<body>
+    <h1 id="head">Welcome <span id="username"></span></h1>
+    <button id="showMap" class="button1">Show my Location</button><br>
+    <button id="friend" class="button1">Send friend requests</button>
+    <div id="friendMessage">
+        <form>
+            <h2>Type message to send</h2>
+            <input type="text" placeholder="receiver phone number" required id="receiverPhone" required >
+            <input type="text" placeholder="enter your message" required id="friendRequestMessage" required>
+            <input type="button" id="sendFriendRequest" value="send request" class="button1">
+        </form>
+    </div>
+    <input type="button" value="View friend requests" id="pendingRequests" class="button1"><br>
+    <span id="noRequest"></span>
+    <input type="button" value="sign out" id="signOut" class="button1">
+    <div id="friendRequests"></div>
+    <div id="friendLocation">
+        <form>
+            <input type="tel" maxlength="10" placeholder="search friend location" id="friendNumber" required >
+            <input type="button" id="searchFriend" value="submit" class="button1">
+        </form>    
+        <span id="notFriend"></span>
+    </div>
+    <div id="map" style="width: 48%; height: 100%">
+        <script>
+            var lat = 28.659408700000004;
+            var long = 77.3396838;
+            var map=new MapmyIndia.Map("map",{ center:[lat, long],zoomControl: true,hybrid:true });
+            L.marker([lat, long]).addTo(map);   
+        </script>
+    </div>
+    <div id="map1" style="width: 48%; height: 100%"></div>
+       
+</body>
+</html>

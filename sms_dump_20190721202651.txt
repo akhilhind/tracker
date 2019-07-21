@@ -1,0 +1,234 @@
+
+=====================
+[+] SMS messages dump
+=====================
+
+Date: 2019-07-21 20:26:53 +0530
+OS: Android 9 - Linux 3.18.91-16247051 (armv8l)
+Remote IP: 127.0.0.1
+Remote Port: 48554
+
+#1
+Type	: Incoming
+Date	: 2019-07-21 16:55:21
+Address	: VK-VAAHAN
+Status	: NOT_RECEIVED
+Message	: Security Code for Your Application: 676832
+
+#2
+Type	: Incoming
+Date	: 2019-07-21 16:53:55
+Address	: BH-CorpBk
+Status	: NOT_RECEIVED
+Message	: Your A/c XXXXXXXXXXXX434 in Nakur debited INR 1705.90 on 21-07-2019 by TRF. Avl Bal is +5257.41
+
+#3
+Type	: Incoming
+Date	: 2019-07-21 16:53:24
+Address	: BZ-CorpBk
+Status	: NOT_RECEIVED
+Message	: 354800 is the OTP for your Transaction dated 21-07-2019 04:48:48 PM. PLZ DO NOT SHARE THIS INFORMATION WITH OTHERS. From CorpBank.
+
+#4
+Type	: Outgoing
+Date	: 2019-07-05 13:33:10
+Address	: 9704100100
+Status	: NOT_RECEIVED
+Message	: STATUS DL4063375646019
+
+#5
+Type	: Incoming
+Date	: 2019-06-28 13:17:20
+Address	: IM-ITDEFL
+Status	: NOT_RECEIVED
+Message	: Total TDS by Employer of PAN ACZXXXXX5R for Qtr ending Mar 31 is Rs 6,960 and cumulative TDS for FY 18-19 is Rs 10,960. View 26AS for details
+
+#6
+Type	: Incoming
+Date	: 2019-06-28 03:13:05
+Address	: AD-TCSPSK
+Status	: NOT_RECEIVED
+Message	: Police Verification Report is not clear and application is under review at Regional Passport Office.
+
+#7
+Type	: Outgoing
+Date	: 2019-06-28 03:13:01
+Address	: 9704100100
+Status	: NOT_RECEIVED
+Message	: STATUS DL4063375646019
+
+#8
+Type	: Outgoing
+Date	: 2019-06-27 13:05:53
+Address	: 9704100100
+Status	: NOT_RECEIVED
+Message	: STATUS DL4063375646019
+
+#9
+Type	: Outgoing
+Date	: 2019-06-26 18:28:41
+Address	: 9704100100
+Status	: NOT_RECEIVED
+Message	: STATUS DL4063375646019
+
+#10
+Type	: Outgoing
+Date	: 2019-06-05 17:52:00
+Address	: 9704100100
+Status	: NOT_RECEIVED
+Message	: DL4063375646019
+
+#11
+Type	: Incoming
+Date	: 2019-04-10 15:57:27
+Address	: HP-NSESMS
+Status	: NOT_RECEIVED
+Message	: ACZXXXXX5R registered in Cash Equity segment with broker GEOJIT FINANCIAL SERVICES LIMITED with Unique Client Code (UCC)ZEA208 . As per SEBI norms, NSE will start sending SMS/Email alert to you about transactions in your account. If SMS is wrongly sent to you reply by typing Y to 561614 or write to uci@nse.co.in
+
+#12
+Type	: Outgoing
+Date	: 2019-03-23 16:44:30
+Address	: 9990783964
+Status	: NOT_RECEIVED
+Message	: HHLGRG00327782
+
+#13
+Type	: Incoming
+Date	: 2019-03-23 16:34:05
+Address	: +919990783964
+Status	: NOT_RECEIVED
+Message	: Sir A/C NO SEND
+
+#14
+Type	: Outgoing
+Date	: 2019-03-23 16:25:25
+Address	: 9990783964
+Status	: NOT_RECEIVED
+Message	: Dear sir mere interest certificate mon ko bhej Dena pl AJEET SINGH VERMA Palam
+
+#15
+Type	: Incoming
+Date	: 2019-02-02 11:39:16
+Address	: +919758143355
+Status	: NOT_RECEIVED
+Message	: Arvind Rto Roorkii (9927583352)
+
+#16
+Type	: Incoming
+Date	: 2019-01-21 21:00:28
+Address	: MD-CDSLTX
+Status	: NOT_RECEIVED
+Message	: CDSL: Signature updated in your demat account *01610165 on 21/01/2019.Contact your DP for more information.
+
+#17
+Type	: Incoming
+Date	: 2018-11-21 11:23:48
+Address	: VM-NICSMS
+Status	: NOT_RECEIVED
+Message	: OTP: 114062. Login to jeevanpramaan using otp and generate your life certificate. jeevanpramaan.gov.in
+
+#18
+Type	: Incoming
+Date	: 2018-11-21 11:22:33
+Address	: VM-NICSMS
+Status	: NOT_RECEIVED
+Message	: Thank you for successfully submitting your digital life certificate. Your Pramaan id is 7402438376. You may view life certificate online at https://jeevanpramaan.gov.in/ppouser/login . Your Digital life certificate will be processed by your pension Disbursing Agency for release of pension.
+
+#19
+Type	: Incoming
+Date	: 2018-11-21 11:20:56
+Address	: VM-NICSMS
+Status	: NOT_RECEIVED
+Message	: 346740 :- One time password for Jeevan Pramaan Pensioner Registration (valid for 5 hours)
+
+#20
+Type	: Incoming
+Date	: 2018-11-04 16:53:37
+Address	: BZ-Blkchn
+Status	: NOT_RECEIVED
+Message	: My Wallet Authentication Code: FF123
+
+#21
+Type	: Incoming
+Date	: 2018-10-05 16:12:06
+Address	: HP-DSCDSC
+Status	: NOT_RECEIVED
+Message	: Hello RINA VERMA Your DSC Order ID OR785542 is ready to be downloaded, please use link sent to you by email and Download key GNB17
+
+#22
+Type	: Outgoing
+Date	: 2018-10-05 15:46:25
+Address	: 9212220059
+Status	: NOT_RECEIVED
+Message	: Confirm applicant id AP917264 and email RINA.KULDEEP.SANDEEP@GNBDIGITAL.IN forward to 9212220059
+
+#23
+Type	: Incoming
+Date	: 2018-10-05 15:40:41
+Address	: AD-OOFIVE
+Status	: NOT_RECEIVED
+Message	: Confirm applicant id AP917264 and email RINA.KULDEEP.SANDEEP@GNBDIGITAL.IN forward to 9212220059
+
+#24
+Type	: Outgoing
+Date	: 2018-10-05 15:36:53
+Address	: 9212220059
+Status	: NOT_RECEIVED
+Message	: https://www.capricorn.cash/op/record-video/?p=OBJ$$$$$$3dWc0owvzyWv$$$$$$cXHOY1tB2TBpCZb
+
+#25
+Type	: Incoming
+Date	: 2018-10-05 14:39:00
+Address	: AD-OOFIVE
+Status	: NOT_RECEIVED
+Message	: Confirm applicant id AP917264 and email RINA.KULDEEP.SANDEEP@GNBDIGITAL.IN forward to 9212220059
+
+#26
+Type	: Incoming
+Date	: 2018-10-05 14:38:57
+Address	: AD-OOFIVE
+Status	: NOT_RECEIVED
+Message	: Confirm applicant id AP917264 and email RINA.KULDEEP.SANDEEP@GNBDIGITAL.IN forward to 9212220059
+
+#27
+Type	: Outgoing
+Date	: 2018-10-05 14:02:48
+Address	: 9212220059
+Status	: NOT_RECEIVED
+Message	: https://www.capricorn.cash/op/record-video/?p=OBJ$$$$$$3dWc0owvzyWv$$$$$$cXHOY1tB2TBpCZb
+
+#28
+Type	: Outgoing
+Date	: 2018-10-05 13:19:45
+Address	: 9999570401
+Status	: NOT_RECEIVED
+Message	: Confirm applicant id AP917264 and email RINA.KULDEEP.SANDEEP@GNBDIGITAL.IN forward to 9212220059
+
+#29
+Type	: Incoming
+Date	: 2018-10-05 12:49:51
+Address	: AD-OOFIVE
+Status	: NOT_RECEIVED
+Message	: Confirm applicant id AP917264 and email RINA.KULDEEP.SANDEEP@GNBDIGITAL.IN forward to 9212220059
+
+#30
+Type	: Incoming
+Date	: 2018-10-05 12:10:54
+Address	: +919582999195
+Status	: NOT_RECEIVED
+Message	: DIPL.MKT@GMAIL.COM
+
+#31
+Type	: Incoming
+Date	: 2018-09-20 13:12:15
+Address	: AD-NIALTD
+Status	: NOT_RECEIVED
+Message	: Dear Mr/Mrs AJEET SINGH VERMA,Your Motor Policy for Vehicle number: UK-17-0011, Engine no. N15A12406800 and Chassis No. MAKGM85EDF4103010has been issued. Policy Number: 34070931180100000114 valid from 20/09/2018 to 19/09/2019.Customer Id PO63171792. Premium Rs. 15675.For queries if any please contact customer serviceat 18002091415.To download policy visit https://online.newindia.co.in or download from Google Pay Store/Apple App Store / " New India Customer App " for smart phone.
+
+#32
+Type	: Incoming
+Date	: 2018-08-10 15:29:14
+Address	: 919761502009
+Status	: NOT_RECEIVED
+Message	: Aadhar no 751366053615
+

@@ -1,0 +1,129 @@
+
+=================
+[+] Call log dump
+=================
+
+Date: 2019-07-21 20:25:43 +0530
+OS: Android 9 - Linux 3.18.91-16247051 (armv8l)
+Remote IP: 127.0.0.1
+Remote Port: 48554
+
+#1
+Number	: +919412650864
+Name	: Haji Shakil
+Date	: Sun Jul 21 20:18:56 GMT+05:30 2019
+Type	: INCOMING
+Duration: 113
+
+#2
+Number	: +919759602053
+Name	: Tahir Charthawal
+Date	: Sun Jul 21 20:14:26 GMT+05:30 2019
+Type	: OUTGOING
+Duration: 39
+
+#3
+Number	: +919412650864
+Name	: Haji Shakil
+Date	: Sun Jul 21 20:03:06 GMT+05:30 2019
+Type	: INCOMING
+Duration: 93
+
+#4
+Number	: +919315172136
+Name	: Tahir
+Date	: Sun Jul 21 20:00:16 GMT+05:30 2019
+Type	: OUTGOING
+Duration: 0
+
+#5
+Number	: +919084827518
+Name	: Ajay Mandet
+Date	: Sun Jul 21 19:55:29 GMT+05:30 2019
+Type	: INCOMING
+Duration: 255
+
+#6
+Number	: +917078575404
+Name	: Brajpal Gangoh
+Date	: Sun Jul 21 19:48:49 GMT+05:30 2019
+Type	: INCOMING
+Duration: 368
+
+#7
+Number	: +919410099025
+Name	: Sarik Gangoh
+Date	: Sun Jul 21 19:34:14 GMT+05:30 2019
+Type	: INCOMING
+Duration: 100
+
+#8
+Number	: +919412650864
+Name	: Haji Shakil
+Date	: Sun Jul 21 19:32:30 GMT+05:30 2019
+Type	: OUTGOING
+Duration: 0
+
+#9
+Number	: +919761741112
+Name	: Shabir
+Date	: Sun Jul 21 19:25:33 GMT+05:30 2019
+Type	: INCOMING
+Duration: 340
+
+#10
+Number	: +919084767112
+Name	: Shabir 1111
+Date	: Sun Jul 21 19:20:57 GMT+05:30 2019
+Type	: INCOMING
+Duration: 257
+
+#11
+Number	: +919315172136
+Name	: Tahir
+Date	: Sun Jul 21 19:16:37 GMT+05:30 2019
+Type	: INCOMING
+Duration: 206
+
+#12
+Number	: +917017068693
+Name	: Home JIO
+Date	: Sun Jul 21 18:57:00 GMT+05:30 2019
+Type	: INCOMING
+Duration: 8
+
+#13
+Number	: +919368409480
+Name	: M Whatsapp
+Date	: Sun Jul 21 18:52:10 GMT+05:30 2019
+Type	: INCOMING
+Duration: 0
+
+#14
+Number	: +917251096978
+Name	: Sat
+Date	: Sun Jul 21 18:50:35 GMT+05:30 2019
+Type	: OUTGOING
+Duration: 502
+
+#15
+Number	: +919315172136
+Name	: Tahir
+Date	: Sun Jul 21 18:49:32 GMT+05:30 2019
+Type	: OUTGOING
+Duration: 22
+
+#16
+Number	: +917078575404
+Name	: Brajpal Gangoh
+Date	: Sun Jul 21 18:39:18 GMT+05:30 2019
+Type	: OUTGOING
+Duration: 86
+
+#17
+Number	: +917838336325
+Name	: Kharab Delhi
+Date	: Sun Jul 21 18:29:14 GMT+05:30 2019
+Type	: OUTGOING
+Duration: 92
+
